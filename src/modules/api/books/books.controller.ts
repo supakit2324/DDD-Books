@@ -59,7 +59,6 @@ export class BooksController {
 
   @Delete(':bookId')
   public async delete(@Param('bookId') bookId: string): Promise<BooksType> {
-    this.logger.log(bookId);
     const book = await this.deleteBooks.delete(bookId);
     if (!book) {
       this.logger.error(`catch on find books ${bookId} not found`);
