@@ -1,8 +1,6 @@
 export default (): any => ({
-  provider: process.env.BOOKS_PROVIDER || 'Book',
-  port: parseInt(process.env.BOOKS_PORT, 10) || 4002,
-  rmq: process.env.RMQ || '',
-  tcpBook: parseInt(process.env.TCP_PORT_BOOKS, 10),
+  provider: process.env.PROVIDER || 'Book',
+  port: parseInt(process.env.PORT, 10) || 4002,
   aws: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID || '',
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || '',

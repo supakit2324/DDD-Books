@@ -1,9 +1,9 @@
-export type Books = {
+export type BooksType = {
   bookId?: string;
   bookName: string;
   publisher: string;
   category: string;
-  price: string;
-  quantity: string;
+  price: number;
+  quantity: number;
   isAvailable?: boolean;
 };
